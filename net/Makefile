@@ -61,6 +61,8 @@ AOBJS = $(ASRCS:.S=$(OBJEXT))
 CSRCS = $(SOCK_CSRCS) $(NETDEV_CSRCS) $(NET_CSRCS)
 COBJS = $(CSRCS:.c=$(OBJEXT))
 
+$(info $$CSRCS for net Makefile is [${CSRCS}]!!)
+
 SRCS = $(ASRCS) $(CSRCS)
 OBJS = $(AOBJS) $(COBJS)
 
